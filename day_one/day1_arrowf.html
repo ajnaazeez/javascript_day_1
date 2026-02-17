@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator using arrowfunction</title>
+</head>
+<body>
+    <h1>Simple calculator using arrow function</h1>
+    <input id="a" type="number" placeholder="enter the first number">
+    <input id="b" type="number" placeholder="enter the secound number ">
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <p id="result"></p>
+    
+    <script>
+        const add = () => {
+            let a =Number(document.getElementById("a").value);
+            let b =Number(document.getElementById("b").value);
+            document.getElementById("result").innerText="Result :"+(a+b);
+        }
+
+        const sub = () => {
+            let a=Number(document.getElementById("a").value);
+            let b=Number(document.getElementById("b").value)
+            document.getElementById("result").innerText="Result :"+(a-b);
+        }
+    </script>
+    
+</body>
+</html>

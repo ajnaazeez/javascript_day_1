@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USD to INR</title>
+</head>
+<body>
+    <h1>USD TO INR</h1>
+    <input id="usd" type="number" placeholder="enter USD">
+    <button onclick="usdtoinr()">convert</button>
+    <p id="result"></p>
+</body>
+<script>
+    function usdtoinr(){
+        let usd = parseFloat(document.getElementById("usd").value) ;
+        let inr = usd*83 ; 
+        document.getElementById("result").innerText="INR :" +inr;
+        }
+</script>
+</html>
